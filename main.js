@@ -1,24 +1,14 @@
-let degree = +prompt("Enter your degree");
-switch (Math.floor(degree / 10)) {
-  case 10:
-  case 9:
-    alert("your grade is : Exllant");
-    break;
-  case 8:
-    alert("your grade is : Very good");
-    break;
-  case 7:
-    alert("your grade is : Good");
-    break;
-  case 6:
-    alert("your grade is : Acceptable");
-    break;
-  case 5:
-  case 4:
-  case 3:
-  case 2:
-  case 1:
-  case 0:
-    alert("your grade is : Fall");
-    break;
+let degree = +prompt("Enter your degree ")
+if(100 < degree){
+    alert("You are enter Wrong degree")
+}else if(93 <= degree ){
+    alert("Your grade is Exllent")
+}else if(83 <= degree ){
+    alert("Your grade is Very good")
+}else if(70 <= degree ){
+    alert("Your grade is Good")
+}else if(60 <= degree ){
+    alert("Your grade is Acceptable")
+}else{
+    alert("Your grade is Falls")
 }
